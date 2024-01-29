@@ -16,18 +16,19 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDhmMr1UAKnEeVF_uvVDfSDAfTa7Xtq3TU",
-    authDomain: "let-s-share-59501.firebaseapp.com",
-    projectId: "let-s-share-59501",
-    storageBucket: "let-s-share-59501.appspot.com",
-    messagingSenderId: "850382615813",
-    appId: "1:850382615813:web:757e8ce4f17893141f736c",
+  apiKey: "AIzaSyBtI4kzi4HkD2De4IIXhPWhsfKYwmRsJ7A",
+  authDomain: "lets-share-7a5be.firebaseapp.com",
+  projectId: "lets-share-7a5be",
+  storageBucket: "lets-share-7a5be.appspot.com",
+  messagingSenderId: "929860059797",
+  appId: "1:929860059797:web:87918e1a7e38ea094a519c",
+  measurementId: "G-J7SM1Z6Q0W"
 };
 
 // Initialize Firebase
 
 export const app = initializeApp(firebaseConfig);
-
+const analytics = getAnalytics(app);
 export const auth = getAuth(app);
 
 const db = getFirestore(app);
